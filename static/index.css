@@ -1,0 +1,252 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* For navbar */
+#navBar {
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-between;
+  padding: 15px;
+}
+#navBar img {
+  height: 30px;
+  width: 32px;
+}
+#navBar a {
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+}
+.logo {
+  padding: 7px;
+  font-size: 25px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 16px -3px;
+}
+.contents {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 15px;
+}
+.contents a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2.5px;
+  background-color: #000;
+  transition: width 0.3s ease-in;
+}
+.contents a:hover::after {
+  width: 100%;
+}
+
+/* Body part  */
+.bContents {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.data1 {
+  padding: 7px;
+}
+.data1 h1 {
+  margin: 0;
+  font-size: 45px;
+  font-weight: bolder;
+}
+.data1 p {
+  font-size: 25px;
+}
+.bLogo img {
+  height: calc(30rem - 10px);
+  width: calc(30rem - 10px);
+  border-radius: 50%;
+}
+
+#blackBG {
+  display: block;
+  height: calc(34rem - 10px);
+  width: calc(30rem - 10px);
+  background: linear-gradient(to right, rgb(55, 51, 51) 35%, rgb(35, 30, 30));
+  position: absolute;
+  top: calc(7rem - 10px);
+  right: calc(10rem - 12px);
+  transform: translateX(150px);
+  border-radius: 20px 0 0 20px;
+  z-index: -1;
+}
+.navbarM {
+  display: none;
+}
+/* Responsive */
+@media screen and (max-width: 767px) {
+  #navBar {
+    justify-content: center;
+    align-items: center;
+  }
+  .contents {
+    display: none;
+  }
+  .bContents .data1 h1 {
+    display: none;
+  }
+  #blackBG {
+    display: none;
+  }
+  .bContents {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 7px;
+  }
+  .bLogo img {
+    height: calc(15rem - 10px);
+    width: calc(15rem - 10px);
+  }
+  .data1 {
+    text-align: center;
+    text-align-last: center;
+  }
+  .navbarM {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .navbarM .bIcons {
+    display: flex;
+    flex-direction: row;
+    gap: 10rem;
+  }
+  .navbarM .bIcons img {
+    height: 30px;
+    width: 32px;
+  }
+  .navButton {
+    display: block;
+    margin-top: 4rem;
+    font-family: "Acme", sans-serif;
+  }
+  .btn {
+    position: relative;
+    text-decoration: none;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    padding: 5px 10px;
+    border: 2px solid #000000;
+  }
+  .btn::before,
+  .btn::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border: inherit;
+    transition: all 0.5s;
+  }
+  .btn::before {
+    top: -12px;
+    left: -12px;
+    border-width: 2px 0 0 2px;
+  }
+  .btn::after {
+    bottom: -12px;
+    right: -12px;
+    border-width: 0 2px 2px 0;
+  }
+  .btn:hover::before,
+  .btn:hover::after {
+    width: calc(100% + 23px);
+    height: calc(100% + 23px);
+  }
+}
+
+/* For Tablets/iPad  */
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  #navBar {
+    justify-content: center;
+    align-items: center;
+  }
+  .contents {
+    display: none;
+  }
+  .bContents .data1 h1 {
+    display: none;
+  }
+  #blackBG {
+    display: none;
+  }
+  .bContents {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 7px;
+    margin-top: 15rem;
+  }
+  .bLogo img {
+    height: calc(15rem - 10px);
+    width: calc(15rem - 10px);
+  }
+  .data1 {
+    text-align: center;
+    text-align-last: center;
+  }
+  .navbarM {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .navbarM .bIcons {
+    display: flex;
+    flex-direction: row;
+    gap: 10rem;
+  }
+  .navbarM .bIcons img {
+    height: 30px;
+    width: 32px;
+  }
+  .navButton {
+    display: block;
+    margin-top: 4rem;
+    font-family: "Acme", sans-serif;
+  }
+  .btn {
+    position: relative;
+    text-decoration: none;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    padding: 5px 10px;
+    border: 2px solid #000000;
+  }
+  .btn::before,
+  .btn::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border: inherit;
+    transition: all 0.5s;
+  }
+  .btn::before {
+    top: -12px;
+    left: -12px;
+    border-width: 2px 0 0 2px;
+  }
+  .btn::after {
+    bottom: -12px;
+    right: -12px;
+    border-width: 0 2px 2px 0;
+  }
+  .btn:hover::before,
+  .btn:hover::after {
+    width: calc(100% + 23px);
+    height: calc(100% + 23px);
+  }
+}

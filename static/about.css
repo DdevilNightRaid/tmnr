@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Rubik+Dirt&family=Secular+One&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #E3F6F5;
+}
+
+/* Greeting Text  */
+.textArea{
+    margin: 10px 50px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E3F6F5;
+    color: #000;
+    font-size:30px; 
+    letter-spacing: 6px; 
+    font-weight: bold;
+    text-align: center;
+    word-spacing: 4px;
+}
+
+/* used in mobile view  */
+.mob{
+    display: none;
+}
+.mob img{
+    display: none;
+}
+
+/* Start of header  */
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background-color: #191919;
+    color: white;
+    font-family: 'Secular One', sans-serif;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+}
+
+/* Description area  */
+.description{
+    margin: 0;
+    padding: 20px 20px 0 148px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #E3F6F5;
+}
+.description span {
+	display: block;
+	height: 3px;
+	width: calc(87% - 20px);
+	position: absolute;
+	top: calc(87% - 24px);
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #191919;
+    border-radius: 100px;
+}
+.description .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.description .logo img{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+}
+.description .divider1{
+    display: block;
+    height: calc(20rem - 10px);
+    width: 0px;
+    border: 2px solid #191919;
+    margin: 0 40px;
+    margin-top: 20px;
+    border-radius: 100px;
+}
+.description .para{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(25rem - 27px);
+    padding: 10px;
+    color: #000;
+    font-size: 20px;
+}
+
+/* Domains  */
+.domains{
+    border-top: 1px solid transparent;
+    background-color: #E3F6F5;
+    text-align: center;
+}
+.domains .dHeader{
+    font-size: 25px;
+}
+.domains .dHeader strong{
+    font-size: 49px;
+    color: #191919;
+}
+.listOfDomains{
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    column-gap: 10px;
+    row-gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.field_name{
+    height: 150px;
+    width: 160px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #191919;
+    font-family: 'Rubik Dirt', cursive;
+    text-align: center;
+    border-radius: 20%/25% 10%;
+    box-shadow: -3px -3px 2px rgba(255, 255, 255, 0.3),
+                5px 5px 5px rgba(0, 0, 0, 0.2),
+                15px 15px 15px rgba(0, 0, 0, 0.2);
+}
+.field_name strong{
+    color: rgb(255, 255, 255);
+    filter: drop-shadow(-3px -3px 2px rgba(215, 214, 215, 0.3))
+            drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.2))
+            drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.2));
+}
+
+/* Regiments area  */
+.regiments{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #E3F6F5;
+}
+.rHeader {
+    margin-top: 4rem;
+    font-size: 49px;
+    text-align: center;
+    color: black;
+}
+.divider2 {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	margin: 0 40px;
+	margin-top: 20px;
+	margin-right: 14%;
+	height: calc(7rem - 30px);
+	width: 89%;
+	background-color: #191919;
+    color: #E3F6F5;
+	border-radius: 0 57px 57px 0;
+    text-align: center;
+}
+.rContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+/* rBox */
+.rBox{
+    display: flex;
+    flex-direction: column;
+    margin: 17px 70px 0px 70px;
+    height: 300px;
+    width: 216px;
+    border-radius: 10px;
+    box-shadow: 1px -3px 11px 2px gray;
+}
+.rBox .rLogo img{
+    height: 200px;
+    width: 216px;
+    border-radius: 10px 10px 0 0 ;
+}
+.rBox .rName{
+    font-size: 20px;
+    text-align: center;
+    text-shadow: 1px 2px gray;
+    font-family: 'Pacifico-Regular', cursive;
+}
+.rBox .rMoto{
+    border: 0 0 10px 10px;
+    text-align: center;
+    font-weight: 700;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+}
+
+/* Footer Area  */
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    clip-path: polygon(0 0, 100% 13%, 100% 100%, 0% 100%);
+    margin-top: 10px;
+    padding: 20px;
+    background-color: #191919;
+}
+footer .fHeading{
+    color: #E3F6F5;
+}
+footer .lines{
+    padding: 10px;
+    color: #E3F6F5;
+}
+footer .logos{
+    margin: 10px;
+}
+footer .logos a{
+    text-decoration: none;
+}
+footer .logos img{
+    height: 30px;
+    margin: 10px;
+    padding: 5px;
+    filter: invert(100%);
+    border-radius: 5px;
+}
+footer .nav{
+    margin: 20px;
+}
+.btn{
+    position: relative;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    padding: 5px 10px;
+    border: 1px solid #29DE92;
+}
+.btn::before,
+.btn::after{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border: inherit;
+    transition: all 0.5s;
+}
+.btn::before{
+    top: -12px;
+    left: -12px;
+    border-width: 1px 0 0 1px;
+}
+.btn::after{
+    bottom: -12px;
+    right: -12px;
+    border-width: 0 1px 1px 0;
+}
+.btn:hover::before, .btn:hover::after{
+    width: calc(100% + 23px);
+    height: calc(100% + 23px);
+}
+
+/* responsive */
+@media screen and (max-width:767px) {
+    .mob{
+        display: block;
+    }
+    .mob img {
+        display: block;
+        position: absolute;
+        width: calc(24rem - 12px);
+        top: calc(23% - 10px);
+        height: calc(48% - 12px);
+        z-index: -1;
+        border-radius: 50%;
+        opacity: .7;
+    }
+
+    /* loading text  */
+    .textArea{
+        font-size:25px; 
+        margin: 10px 50px; 
+        letter-spacing: 6px; 
+        font-weight: bold;
+        text-align: center;
+        word-spacing: 3px;
+        background-color: #E3F6F5;
+    }
+    /* main .description  */
+    .description{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        clip-path: polygon(0 0, 100% 31%, 100% 100%, 0% 100%);
+        padding: 10px;
+        height: calc(22rem - 20px);
+        background-color: #191919;
+    }
+    .description .divider1{
+        display: none;
+    }
+    .description .logo{
+        display: none;
+    }
+    .description .logo img{
+        display: none;
+    }
+    .description .para{
+        margin-top: 7rem;
+        color: #E3F6F5;
+    }
+    
+    /* Our Domain section  */
+    .listOfDomains{
+        display: grid;
+        grid-template-columns: 200px 200px;
+        column-gap: 10px;
+        row-gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+    /* .regiments  */
+    .divider2 {
+        height: calc(6rem - 30px);
+        font-size: 10px;
+    }
+    .rContainer{
+        display: grid;
+        grid-template-columns: 170px 170px;
+        column-gap: 20px;
+        row-gap: 15px;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 10px 10px 20px;
+        margin: 0;
+    }
+    
+    /* rBox */
+    .rBox{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        height:230px;
+        width: 160px;
+        box-shadow: 1px -3px 11px 2px gray;
+        border-radius: 10px;
+    }
+    .rBox .rLogo img{
+        height: 150px;
+        width: 160px;
+        border-radius: 10px 10px 0 0 ;
+    }
+    .rBox .rName{
+        font-size: 17px;
+        text-align: center;
+        text-shadow: 1px 2px gray;
+        font-family: 'Pacifico-Regular', cursive;
+    }
+    .rBox .rMoto{
+        border: 0 0 10px 10px;
+        text-align: center;
+        font-weight: 700;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+        font-size: 10px;
+    }
+}
+/* @media screen and (min-width:767px) and (max-width: 1023px) {
+
+} */
